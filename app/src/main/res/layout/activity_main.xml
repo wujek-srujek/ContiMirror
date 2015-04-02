@@ -1,60 +1,22 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.jambit.conti.MainActivity"
-    tools:ignore="HardcodedText">
-
-    <RelativeLayout
-        android:layout_margin="16dp"
-        android:layout_height="0dp"
-        android:layout_width="match_parent"
-        android:layout_weight="1">
-
-        <RelativeLayout
-            android:id="@+id/app"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <View
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border" />
-
-            <WebView
-                android:id="@+id/web"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="invisible" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Blah" />
-
-        </RelativeLayout>
-
-        <!-- blocks real touches in the app view -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clickable="true" />
-
-    </RelativeLayout>
+                tools:context="com.jambit.conti.mirror.MainActivity"
+                tools:ignore="HardcodedText,PxUsage">
 
     <RelativeLayout
+        android:id="@+id/app"
         android:layout_margin="16dp"
-        android:layout_height="0dp"
-        android:layout_width="match_parent"
-        android:layout_weight="1">
+        android:layout_width="800px"
+        android:layout_height="600px"
+        android:layout_centerHorizontal="true">
 
         <ImageView
             android:id="@+id/mirror"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            tools:ignore="ContentDescription" />
+            android:background="#FFFFFFFF"/>
 
         <TextView
             android:id="@+id/fps"
@@ -65,15 +27,13 @@
             android:layout_alignParentRight="true"
             android:textColor="#FF000000"
             android:textSize="12sp"
-            android:background="#FFFFFF" />
+            android:background="#FFFFFF"/>
 
         <View
             android:id="@+id/touch"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" />
+            android:layout_height="match_parent"/>
 
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

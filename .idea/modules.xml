@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Conti.iml" filepath="$PROJECT_DIR$/Conti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContiMirror.iml" filepath="$PROJECT_DIR$/ContiMirror.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
